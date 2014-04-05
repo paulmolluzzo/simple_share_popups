@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta property="og:url" content="https://paulmolluzzo.github.io/simple_share_popups">
+        <meta property="og:image" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.">
+        <title>Simple Share Popups</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Simple Share Popups</h1>
+                <p>A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.</p>
+            </div>
+        </header>
+        <div class="container">
+            <h2>How these work</h2>
+
+<p>For all of these samples a new window will pop up separately with a defined height and width. In that window will be the submission form for whichever social network is being used populated with the content specified in the parameter fields.</p>
+
+<p>To use, copy the code listed and update the content in the paramter areas. If you prefer to use an image instead of text, just have the anchor tag wrap an <code>img</code> tag.</p>
+
+<h2>Twitter</h2>
+
+<p>Twitter allows you to send a tweet and takes the text of the tweet as its only parameter.</p>
+
+<p><a class="example" href="http://twitter.com/intent/tweet?text=Simple Share Popups https://paulmolluzzo.github.io/simple_share_popups via @paulmolluzzo" onclick="window.open(this.href, 'twitterwindow','left=20,top=20,width=600,height=300,toolbar=0,resizable=1'); return false;">Tweet Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://twitter.com/intent/tweet?text=[TWEET_CONTENT_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;twitterwindow&#39;,&#39;left=20,top=20,width=600,height=300,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Tweet<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h2>Facebook</h2>
+
+<p>Twitter allows you to share a webpage and takes a title, summary, url, and image(s) as parameters. This usually performs better if you include open graph meta tags.</p>
+
+<p><a class="example" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Simple Share Popups&amp;p[summary]=A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.&amp;p[url]=https://paulmolluzzo.github.io/simple_share_popups&amp;p[images[0]=[IMAGE_GOES_HERE]" onclick="window.open(this.href, 'facebookwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Facebook Example Button</a></p>
+
+<p>Sharing Link</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.facebook.com/sharer.php?s=100&amp;amp;p[title]=[TITLE_GOES_HERE]&amp;amp;p[summary]=[SUMMARY_GOES_HERE]&amp;amp;p[url]=[URL_GOES_HERE]&amp;amp;p[images[0]=[IMAGE_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;facebookwindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Share on FB<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<p>Meta Tags</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:url&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:image&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:title&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<h2>Tumblr</h2>
+
+<p>Tumblr takes a URL and title as parameters.</p>
+
+<p><a class="example" href="http://www.tumblr.com/share?v=3&u=https://paulmolluzzo.github.io/simple_share_popups&t=Simple Share Popups" onclick="window.open(this.href, 'tumblrwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Tumblr Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.tumblr.com/share?v=3&amp;u=[URL_GOES_HERE]&amp;t=[TITLE_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;tumblrwindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Share on Tumblr<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h2>Google+</h2>
+
+<p>Google+ just takes a URL as the parameter for the sharer link</p>
+
+<p><a class="example" href="https://plus.google.com/share?url=https://paulmolluzzo.github.io/simple_share_popups" onclick="window.open(this.href, 'googlepluswindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Google+ Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://plus.google.com/share?url=[URL_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;googlepluswindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Share on Google+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h2>Pinterest</h2>
+
+<p>Pinterest let&#39;s you pin images or video and takes the media, a URL, media type, and a description as parameters.For the <code>is_video</code> parameter, select <code>true</code> or <code>false</code>.</p>
+
+<p><a class="example" href="http://pinterest.com/pin/create/bookmarklet/?media=&url=https://paulmolluzzo.github.io/simple_share_popups&is_video=false&description=A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff." onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Pinterest Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://pinterest.com/pin/create/bookmarklet/?media=[IMAGE_GOES_HERE]&amp;url=[URL_GOES_HERE]&amp;is_video=[true|false]&amp;description=[DESCRIPTION_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;pinterestwindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Pin it<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h2>Reddit</h2>
+
+<p>Reddit takes a URL and Title for the post.</p>
+
+<p><a class="example" href="http://www.reddit.com/submit?url=https://paulmolluzzo.github.io/simple_share_popups&title=Simple Share Popups" onclick="window.open(this.href, 'redditwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Reddit Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.reddit.com/submit?url=[URL_GOES_HERE]&amp;title=[TITLE_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;redditwindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Post to Reddit<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h2>Hacker News</h2>
+
+<p>Hacker News takes a URL and Title for the post.</p>
+
+<p><a class="example" href="http://news.ycombinator.com/submitlink?u=https://paulmolluzzo.github.io/simple_share_popups&t=Simple Share Popups" onclick="window.open(this.href, 'hackernewswindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Hacker News Example Button</a></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://news.ycombinator.com/submitlink?u=[URL_GOES_HERE]&amp;t=[TITlE_GOES_HERE]&quot;</span> <span class="na">onclick=</span><span class="s">&quot;window.open(this.href, &#39;hackernewswindow&#39;,&#39;left=20,top=20,width=600,height=700,toolbar=0,resizable=1&#39;); return false;&quot;</span><span class="nt">&gt;</span>Submit to Hacker News<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p>Open sourced under MIT. Copyright 2014</p>
+                <p>Collected by <a href="paulmolluzzo">Paul Molluzzo</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

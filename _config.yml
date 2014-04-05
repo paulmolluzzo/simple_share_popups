@@ -1,0 +1,8 @@
+name:           "Simple Share Popups"
+description:    A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.
+image:          
+url:            https://paulmolluzzo.github.io/simple_share_popups
+repo:           https://github.com/paulmolluzzo/simple_share_popups
+twitter:        paulmolluzzo
+
+markdown:      redcarpet

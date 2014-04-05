@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta property="og:url" content="{{ site.url}}">
+        <meta property="og:image" content="{{ site.image }}">
+        <meta property="og:title" content="{{ site.title }}">
+        <meta property="og:description" content="{{ site.description }}">
+        <title>{{ site.name }}</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Simple Share Popups</h1>
+                <p>A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.</p>
+            </div>
+        </header>
+        <div class="container">
+            {{ content }}
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p>Open sourced under MIT. Copyright 2014</p>
+                <p>Collected by <a href="{{ site.twitter }}">Paul Molluzzo</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

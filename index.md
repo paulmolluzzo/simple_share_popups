@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## How these work
 
 For all of these samples a new window will pop up separately with a defined height and width. In that window will be the submission form for whichever social network is being used populated with the content specified in the parameter fields.

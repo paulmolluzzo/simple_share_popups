@@ -22,7 +22,7 @@ Twitter allows you to send a tweet and takes the text of the tweet as its only p
 
 Twitter allows you to share a webpage and takes a title, summary, url, and image(s) as parameters. This usually performs better if you include open graph meta tags.
 
-<a class="example" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]={{ site.name | url_param_escape }}&amp;p[summary]={{ site.description | url_param_escape }}&amp;p[url]={{ site.url | url_param_escape }}&amp;p[images[0]=[IMAGE_GOES_HERE]" onclick="window.open(this.href, 'facebookwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Facebook Example Button</a>
+<a class="example" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]={{ site.name | url_param_escape }}&amp;p[summary]={{ site.description | url_param_escape }}&amp;p[url]={{ site.url | url_param_escape }}&amp;p[images[0]={{ site.url | url_param_escape }}{{ site.image }}" onclick="window.open(this.href, 'facebookwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Facebook Example Button</a>
 
 Sharing Link
 
@@ -63,7 +63,7 @@ Google+ just takes a URL as the parameter for the sharer link
 
 Pinterest let's you pin images or video and takes the media, a URL, media type, and a description as parameters.For the `is_video` parameter, select `true` or `false`.
 
-<a class="example" href="http://pinterest.com/pin/create/bookmarklet/?media={{ site.image }}&url={{ site.url | url_param_escape }}&is_video=false&description={{ site.description | url_param_escape }}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Pinterest Example Button</a>
+<a class="example" href="http://pinterest.com/pin/create/bookmarklet/?media={{ site.url | url_param_escape }}{{ site.image }}&url={{ site.url | url_param_escape }}&is_video=false&description={{ site.description | url_param_escape }}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Pinterest Example Button</a>
 
 ```html
 <a href="http://pinterest.com/pin/create/bookmarklet/?media=[IMAGE_GOES_HERE]&url=[URL_GOES_HERE]&is_video=[true|false]&description=[DESCRIPTION_GOES_HERE]" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Pin it</a>

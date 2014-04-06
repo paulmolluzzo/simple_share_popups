@@ -50,7 +50,7 @@ Tumblr takes a URL and title as parameters.
 Snippet:
 
 ```html
-<a href="http://www.tumblr.com/share?s=&v=3&t=[URL_GOES_HERE]&u=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'tumblrwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Share on Tumblr</a>
+<a href="http://www.tumblr.com/share?s=&v=3&u=[URL_GOES_HERE]&u=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'tumblrwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Share on Tumblr</a>
 ```
 
 ## Google+

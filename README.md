@@ -1,3 +1,3 @@
 # Simple Share Popups
 
-A small collection of methods for adding share buttons that don't rely on JavaScript or any authorization stuff.
+Simple share buttons that create popup windows for posting content.

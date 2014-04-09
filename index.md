@@ -100,3 +100,15 @@ Snippet:
 ```html
 <a href="http://news.ycombinator.com/submitlink?u=[URL_GOES_HERE]&t=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'hackernewswindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Submit to Hacker News</a>
 ```
+
+## Buffer App
+
+Buffer App takes a URL and Title for the post.
+
+<a class="example" href="http://bufferapp.com/add?text={{ site.name }}&url={{ site.encodedUrl }}" onclick="window.open(this.href, 'bufferwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Queue on Buffer</a>
+
+Snippet:
+
+```html
+<a href="http://bufferapp.com/add?text=[TITLE_GOES_HERE]&url=[URL_GOES_HERE]" onclick="window.open(this.href, 'bufferwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Queue on Buffer</a>
+```

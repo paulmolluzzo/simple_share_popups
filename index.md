@@ -8,6 +8,8 @@ For all of these samples a new window will pop up separately with a defined heig
 
 To use, copy the code listed and update the content in the paramter areas. If you prefer to use an image instead of text, just have the anchor tag wrap an `img` tag.
 
+*You must encode all the URLs you use within the sharer URL.*
+
 ## Twitter
 
 Twitter allows you to send a tweet and takes the text of the tweet as its only parameter.
@@ -111,4 +113,52 @@ Snippet:
 
 ```html
 <a href="http://bufferapp.com/add?text=[TITLE_GOES_HERE]&url=[URL_GOES_HERE]" onclick="window.open(this.href, 'bufferwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Queue on Buffer</a>
+```
+
+## Digg
+
+Digg takes a URL and Title for the post.
+
+<a class="example" href="http://digg.com/submit?url={{ site.encodedUrl }}&title={{ site.name }}" onclick="window.open(this.href, 'diggwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Submit to Digg</a>
+
+Snippet:
+
+```html
+<a href="http://digg.com/submit?url=[URL_GOES_HERE]&title=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'diggwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Submit to Digg</a>
+```
+
+## LinkedIn
+
+LinkedIn takes a URL and Title for the post.
+
+<a class="example" href="http://www.linkedin.com/shareArticle?url={{ site.encodedUrl }}&title={{ site.name }}" onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Post on LinkedIn</a>
+
+Snippet:
+
+```html
+<a href="http://www.linkedin.com/shareArticle?url=[URL_GOES_HERE]&title=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Post on LinkedIn</a>
+```
+
+## StumbleUpon
+
+StumbleUpon takes a URL and Title for the link.
+
+<a class="example" href="http://www.stumbleupon.com/submit?url={{ site.endcodedUrl }}&title={{ site.name }}" onclick="window.open(this.href, 'stumbleuponwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Post on StumbleUpon</a>
+
+Snippet:
+
+```html
+<a href="http://www.stumbleupon.com/submit?url=[URL_GOES_HERE]&title=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'stumbleuponwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Post on StumbleUpon</a>
+```
+
+## Delicious
+
+Delicious takes a URL and Title for the link, and also takes a "provider" naming the company that provided the link.
+
+<a class="example" href="https://delicious.com/save?v=5&provider={{ site.author }}&noui&jump=close&url={{ site.encodedUrl }}&title={{ site.name }}" onclick="window.open(this.href, 'deliciouswindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Save this on Delicious</a>
+
+Snippet:
+
+```html
+<a href="https://delicious.com/save?v=5&provider=[PROVIDER_GOES_HERE]&noui&jump=close&url=[URL_GOES_HERE]&title=[TITLE_GOES_HERE]" onclick="window.open(this.href, 'deliciouswindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Save this on Delicious</a>
 ```

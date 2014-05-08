@@ -24,7 +24,7 @@ Snippet:
 
 ## Facebook
 
-Twitter allows you to share a webpage and takes a title, summary, url, and image(s) as parameters. This usually performs better if you include open graph meta tags.
+Facebook allows you to share a webpage and takes a title, summary, url, and image(s) as parameters. This usually performs better if you include open graph meta tags.
 
 <a class="example" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]={{ site.name }}&amp;p[summary]={{ site.description }}&amp;p[url]={{ site.encodedUrl }}&amp;p[images[0]={{ site.encodedUrl }}{{ site.image }}" onclick="window.open(this.href, 'facebookwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">Share on Facebook</a>
 
